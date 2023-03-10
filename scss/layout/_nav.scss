@@ -1,0 +1,25 @@
+#nav {
+    background-color: $color-primario;
+        margin: 0;
+        .nav-link {
+            color: $color-letra-principal;
+            &:hover {
+                    color: $color-letra-secundario
+                }
+        }
+        .navbar-brand {
+            color: $color-letra-principal;
+            &:hover {
+                color: $color-letra-secundario;
+            }
+        }
+        .btn.btn-outline-success {
+            background-color: $color-letra-secundario;
+            color: $color-letra-principal;
+            border: none;
+            &:hover {
+                color: $color-letra-secundario;
+                background-color: $color-letra-principal;
+            }
+        } 
+    }
