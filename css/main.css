@@ -1,26 +1,27 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 #footer {
   width: 100%;
   height: 200px;
-  background-color: #353434;
+  background-color: #f7f6f6;
   margin: 0;
   padding: 0;
 }
-
-.row {
+#footer .row {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(5, 40px);
 }
-
-#redes-footer {
+#footer .row #redes-footer {
   display: flex;
   justify-content: center;
   grid-row: 2/3;
   grid-column: 1/3;
 }
-
-.footer-redes {
+#footer .row #redes-footer .footer-redes {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -28,65 +29,53 @@
   width: 50%;
   padding: 0;
 }
-
-.redes {
+#footer .row #redes-footer .footer-redes .redes {
   width: 35px;
   height: 35px;
 }
-
-.copyright {
-  font-size: 15px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/3;
-  padding: 0;
-}
-
-#footer-info-privacidad {
+#footer .row #footer-info-privacidad {
   display: flex;
   justify-content: center;
   grid-column: 1/3;
   grid-row: 4/5;
 }
-
-.info-privacidad-footer {
+#footer .row #footer-info-privacidad .info-privacidad-footer {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 70%;
 }
-
-.info-legal {
+#footer .row #footer-info-privacidad .info-privacidad-footer .info-legal {
   font-size: 15px;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.politica-privacidad {
+#footer .row #footer-info-privacidad .info-privacidad-footer .politica-privacidad {
   font-size: 15px;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.container-linea-arriba {
-  width: 100%;
+#footer .row .copyright {
+  font-size: 15px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  padding: 0;
 }
-
-#linea-top {
+#footer .row #linea-top {
   width: 100%;
   grid-column: 1/3;
   grid-row: 1;
   padding: 0;
 }
-
-.linea-arriba {
+#footer .row #linea-top .linea-arriba {
   border-width: 2px;
   border-color: #840705;
   width: 100%;
@@ -95,8 +84,7 @@
   margin: 0;
   opacity: 100%;
 }
-
-#linea-right {
+#footer .row #linea-right {
   width: 100%;
   grid-column: 2/3;
   grid-row: 2;
@@ -105,8 +93,7 @@
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(2, 50%);
 }
-
-.linea-derecha {
+#footer .row #linea-right .linea-derecha {
   border-width: 2px;
   border-color: #840705;
   opacity: 100%;
@@ -115,8 +102,7 @@
   margin: 17px 0 0;
   width: 100%;
 }
-
-#linea-left {
+#footer .row #linea-left {
   width: 100%;
   grid-column: 1/2;
   grid-row: 2;
@@ -125,8 +111,7 @@
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(2, 50%);
 }
-
-.linea-izquierda {
+#footer .row #linea-left .linea-izquierda {
   border-width: 2px;
   border-color: #840705;
   opacity: 100%;
@@ -242,6 +227,56 @@
     max-width: 350px;
     margin: 0 auto;
   }
+}
+
+.fondo-contacto {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 100%;
+  height: 600px;
+  justify-items: center;
+  align-items: center;
+}
+.fondo-contacto .informacion {
+  background-color: #f7f6f6;
+  width: 80%;
+  height: 500px;
+  border: solid 2px;
+  border-color: black;
+  grid-column: 1;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 60px 460px;
+}
+.fondo-contacto .informacion .tittle-informacion {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+}
+.fondo-contacto .informacion .texto-informacion {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fondo-contacto .informacion .texto-informacion .titulos-informacion {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+.fondo-contacto .informacion .texto-informacion .texto-info {
+  color: black;
+  font-size: 18px;
+}
+.fondo-contacto .informacion .texto-informacion .icons-info {
+  height: 25px;
+  width: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

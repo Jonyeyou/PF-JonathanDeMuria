@@ -1,0 +1,50 @@
+.fondo-contacto {
+    background-color: $color-terciario;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
+    height: 600px;
+    justify-items: center;
+    align-items: center;
+                .informacion {
+                    background-color: $color-secundario;
+                    width: 80%;
+                    height: 500px;
+                    border:solid 2px;
+                    border-color: black;
+                    grid-column: 1;
+                    display: grid;
+                    justify-items: center;
+                    grid-template-rows: 60px 460px;
+                        .tittle-informacion{
+                            grid-row: 1;
+                            grid-column: 1;
+                            font-size: $size-titulos;
+                            color: $color-letra-secundario;
+                            font-weight: 600;
+                        }
+                        .texto-informacion{
+                            grid-row: 2;
+                            grid-column: 1;
+                            width: 100%;
+                            padding: 5px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .titulos-informacion{
+                                color: $color-letra-secundario;
+                                font-size: $size-titulos-secundarios;
+                                font-weight: 600;
+                            }
+                            .texto-info {
+                                color: $color-letra-secundario;
+                                font-size: $size-texto;
+                            }
+                            .icons-info {
+                                height: 25px;
+                                width: 25px;
+                            }
+                        }
+                }
+
+}
