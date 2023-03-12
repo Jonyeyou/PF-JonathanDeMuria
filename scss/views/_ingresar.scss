@@ -1,0 +1,136 @@
+.fondo-ingresar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .conectar {
+            width: 60%;
+            height: auto;
+            border: solid 2px;
+            background-color: $color-secundario;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                .tittle-cuentas {
+                    font-size: $size-titulos;
+                    color: $color-letra-secundario;
+                    margin: 5px;
+                    font-weight: 600;
+                }
+                .conectar-google {
+                    border: solid 1px;
+                    width: 80%;
+                    height: auto;
+                    margin: 5px;
+                    background-color: $color-terciario;
+                    font-size: $size-titulos-secundarios;
+                    color: $color-letra-secundario;
+                    text-decoration: none;
+                    text-align: center;
+                    font-weight: 400;
+                        .icono-google {
+                            width: 25px;
+                            height: 25px;
+                            margin: 2px;
+                        }
+                }
+                .conectar-facebook {
+                    border: solid 1px;
+                    width: 80%;
+                    height: auto;
+                    margin: 5px;
+                    background-color: #3b5998;
+                    font-size: $size-titulos-secundarios;
+                    color: $color-letra-secundario;
+                    text-decoration: none;
+                    text-align: center;
+                    font-weight: 400;
+                        .icono-facebook {
+                            width: 25px;
+                            height: 25px;
+                            margin: 2px ;
+                        }
+                }
+        }
+        .ingresar {
+            width: 60%;
+            height: auto;
+            border: solid 2px;
+            background-color: $color-secundario;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+                .tittle-registro {
+                    color: $color-letra-secundario;
+                    font-size: $size-titulos;
+                    font-weight: 600;
+                    margin: 5px;
+                }
+                .form-2 {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                        .email-registro {
+                            width: 80%;
+                            height: auto;
+                            background-color: $color-terciario;
+                            margin: 5px;
+                        }
+                        .contraseña {
+                            width: 80%;
+                            background-color: $color-terciario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                        .confirmar-contraseña {
+                            width: 80%;
+                            background-color: $color-terciario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                        .tittle-info-personal {
+                            color: $color-letra-secundario;
+                            font-size: $size-titulos;
+                            margin: 5px;
+                            font-weight: 600;
+                            text-align: center;
+                        }
+                        .nombre-registro {
+                            width: 80%;
+                            background-color: $color-terciario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                        .apellido-registro {
+                            width: 80%;
+                            background-color: $color-terciario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                        .dni-registro {
+                            width: 80%;
+                            background-color: $color-terciario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                        .telefono-registro {
+                            width: 80%;
+                            background-color: $color-terciario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                        .boton-registro {
+                            width: 80%;
+                            background-color: $color-secundario;
+                            height: auto;
+                            margin: 5px;
+                        }
+                }
+        }
+}

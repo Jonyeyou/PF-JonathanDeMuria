@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una empresa chica la cual se dedica a la venta de 
+    productos tecnolofgicos como asi tambien el armado y reparaciones de pc">
+    <meta name="keywords" content="PLACAS DE VIDEO, PROCESADORES, MEMORIAS RAM, SSD, HHD, INTEL, MSI, AMD, ASUS, PC, REPARACION, MANTENIMIENTO, TECNOLOGIA, VIDEOJUEGOS">
     <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +18,38 @@
 </head>
 <body>
     <header>
+
+        <!--Navegador-->
+
         <nav id="nav" class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="./images/icons/menu.png" class="navbar-toggler-icon"></img>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="
+                #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" a
+                ria-label="Toggle navigation">
+                <img src="./images/icons/menu.png" alt="icono menu" class="navbar-toggler-icon"></img>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="ul-nav" class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto<a>
+                        <a class="nav-link" aria-current="page" href="./pages/contacto.html">
+                            Contacto
+                        <a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="./pages/nosotros.html">
+                            Nosotros
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        <a class="nav-link" href="./pages/productos.html">
+                            Productos
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/ingresar.html" tabindex="-1" aria-disabled="true">Mi Cuenta</a>
+                        <a class="nav-link" href="./pages/ingresar.html" tabindex="-1" aria-disabled="true">
+                            Mi Cuenta
+                        </a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -42,27 +60,77 @@
         </div>
     </nav>
 </header>
+
+        <!--Contenido de la pagina-->
+
+        <!--slider-->
+
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="./images/slider_1.png" class="d-block w-100" alt="...">
+            <img src="./images/slider_1.png" class="d-block w-100" alt="imagen slider 1">
         </div>
         <div class="carousel-item">
-            <img src="./images/slider_2.png" class="d-block w-100" alt="...">
+            <img src="./images/slider_2.png" class="d-block w-100" alt="imagen slider 2">
         </div>
         <div class="carousel-item">
-            <img src="./images/slider_3.png" class="d-block w-100" alt="...">
+            <img src="./images/slider_3.png" class="d-block w-100" alt="imagen slider 3">
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" 
+    data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+    data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+
+    <!--Productos destacados-->
+
+<div class="productos-destacados">
+    <h2 class="titulo-productos-destacados">Productos Destacados</h2>
+    <div class="listado-productos d-flex flex-column flex-sm-row">
+        <div class="producto">
+                <img src="./images/3060_strix.jpg" alt="rtx 3060 strix asus" class="imagen-producto">
+            <div class="contenido-producto">
+                <h3 class="titulo-producto">Rtx 3060 Strix Asus</h3>
+                <h2 class="precio">789.<small>99</small> $</h2>
+                <a href="#" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+        
+        <div class="producto">
+            <img src="./images/ram-kingstone-rgb.jpg" alt="ram kingstone rgb" class="imagen-producto">
+            <div class="contenido-producto">
+                <h3 class="titulo-producto">Ram Kingstone RGB 16gb</h3>
+                <h2 class="precio">84.<small>99</small> $</h2>
+                <a href="#" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="./images/ryzen-7.jpg" alt="procesador ryzen 7" class="imagen-producto">
+            <div class="contenido-producto">
+                <h3 class="titulo-producto">Procesador Ryzen 7</h3>
+                <h2 class="precio">169.<small>99</small> $</h2>
+                <a href="#" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="./images/ssd-kingstone.png" alt="ssd kingstone" class="imagen-producto">
+            <div class="contenido-producto">
+                <h3 class="titulo-producto">SSD Kingstone 480gb</h3>
+                <h2 class="precio">64.<small>99</small> $</h2>
+                <a href="#" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Fotter-->
 
     <div id="footer" class="container-fullwidth">
         <div class="row">
@@ -79,22 +147,26 @@
                                 <ul class="footer-redes">
                                     <li class="lista-redes">
                                         <a href="">
-                                            <img class="redes" src="./images/icons/facebook.png" alt="">
+                                            <img class="redes" src="./images/icons/facebook.png" 
+                                            alt="icono facebook">
                                         </a>
                                     </li>
                                     <li class="lista-redes">
                                         <a href="">
-                                            <img class="redes" src="./images/icons/instagram.png" alt="">
+                                            <img class="redes" src="./images/icons/instagram.png"
+                                            alt="icono instagram">
                                         </a>
                                     </li>
                                     <li class="lista-redes">
                                         <a href="">
-                                            <img class="redes" src="./images/icons/telefono.png" alt="">
+                                            <img class="redes" src="./images/icons/telefono.png" 
+                                            alt="icono telefono">
                                         </a>
                                     </li>
                                     <li class="lista-redes">
                                         <a href="">
-                                            <img class="redes" src="./images/icons/whatsapp.png" alt="">
+                                            <img class="redes" src="./images/icons/whatsapp.png" 
+                                            alt="icono whatsapp">
                                         </a>
                                     </li>
                                 </ul>
@@ -111,6 +183,8 @@
                 </ul>
             </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin=
+    "anonymous"></script>
 </body>
 </html>

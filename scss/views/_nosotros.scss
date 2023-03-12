@@ -1,0 +1,29 @@
+.fondo-nosotros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: $color-terciario;
+    .nosotros {
+        width: 50%;
+        height: auto;
+        margin: 20px;
+        border: solid 2px;
+        border-color: black;
+        background-color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+            .tittle-nosotros {
+                font-size: $size-titulos;
+                color: $color-letra-secundario;
+                font-weight: 600;
+                margin: 5px;
+                text-align: center;
+            }
+            .texto-nosotros {
+                font-size: $size-texto;
+                color: $color-letra-secundario;
+                margin: 5px 10px;
+            }
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Nunito", sans-serif;
 }
@@ -229,27 +230,122 @@ body {
   }
 }
 
+.productos-destacados {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos-destacados .titulo-productos-destacados {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 10px 0px 10px;
+  border: solid 2px;
+  border-radius: 4px;
+  width: 40%;
+  background-color: #840705;
+}
+.productos-destacados .listado-productos {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  border: solid 2px;
+  margin: 20px;
+  background-color: #f7f6f6;
+}
+.productos-destacados .listado-productos .producto {
+  width: 204px;
+  height: auto;
+  margin: 20px;
+  border: solid 2px;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #f7f6f6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.productos-destacados .listado-productos .producto .imagen-producto {
+  width: 200px;
+  height: 50%;
+  border-radius: 8px 8px 0px 0px;
+}
+.productos-destacados .listado-productos .producto .contenido-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos-destacados .listado-productos .producto .contenido-producto .titulo-producto {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+.productos-destacados .listado-productos .producto .contenido-producto .boton-comprar {
+  border: solid 2px;
+  background-color: white;
+  border-color: #840705;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+  text-decoration: none;
+  font-size: 25px;
+  width: 60%;
+  height: 30%;
+  text-align: center;
+  margin: 4px;
+}
+.productos-destacados .listado-productos .producto .contenido-producto .boton-comprar:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #840705;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.productos-destacados .listado-productos .producto .contenido-producto .boton-comprar:hover {
+  color: #fff;
+}
+.productos-destacados .listado-productos .producto .contenido-producto .boton-comprar:hover:after {
+  width: 110%;
+}
+
 .fondo-contacto {
   background-color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  width: 100%;
-  height: 600px;
-  justify-items: center;
-  align-items: center;
+  width: auto;
+  height: auto;
 }
 .fondo-contacto .informacion {
   background-color: #f7f6f6;
   width: 80%;
-  height: 500px;
+  min-height: 520px;
+  height: auto;
+  margin: 20px;
   border: solid 2px;
   border-color: black;
   grid-column: 1;
   display: grid;
   justify-items: center;
   grid-template-rows: 60px 460px;
+  overflow: auto;
 }
 .fondo-contacto .informacion .tittle-informacion {
+  padding: 10px;
   grid-row: 1;
   grid-column: 1;
   font-size: 30px;
@@ -260,6 +356,7 @@ body {
   grid-row: 2;
   grid-column: 1;
   width: 100%;
+  height: auto;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -277,6 +374,324 @@ body {
 .fondo-contacto .informacion .texto-informacion .icons-info {
   height: 25px;
   width: 25px;
+}
+.fondo-contacto .formulario {
+  background-color: #f7f6f6;
+  width: 80%;
+  min-height: 524px;
+  height: auto;
+  margin: 20px;
+  border: solid 2px;
+  border-color: black;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 60px 460px;
+}
+.fondo-contacto .formulario .tittle-contacto {
+  padding: 10px;
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.fondo-contacto .formulario .form-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-contacto .formulario .form-1 .div-arriba {
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+}
+.fondo-contacto .formulario .form-1 .div-arriba .nombre {
+  width: 97%;
+  height: 25px;
+  margin: 4px;
+  grid-column: 1;
+  grid-row: 1;
+}
+.fondo-contacto .formulario .form-1 .div-arriba .mail {
+  width: 97%;
+  height: 25px;
+  margin: 4px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.fondo-contacto .formulario .form-1 .div-abajo {
+  grid-row: 2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-contacto .formulario .form-1 .div-abajo .mensaje {
+  width: 98%;
+  height: 150px;
+  margin: 4px;
+}
+.fondo-contacto .formulario .form-1 .div-abajo .boton {
+  width: 98%;
+  height: 30px;
+  margin: 4px;
+}
+.fondo-contacto .formulario .form-1 .mapa {
+  margin: 4px;
+  width: 97%;
+  height: 100%;
+}
+
+.fondo-ingresar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-ingresar .conectar {
+  width: 60%;
+  height: auto;
+  border: solid 2px;
+  background-color: #f7f6f6;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-ingresar .conectar .tittle-cuentas {
+  font-size: 30px;
+  color: black;
+  margin: 5px;
+  font-weight: 600;
+}
+.fondo-ingresar .conectar .conectar-google {
+  border: solid 1px;
+  width: 80%;
+  height: auto;
+  margin: 5px;
+  background-color: white;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+}
+.fondo-ingresar .conectar .conectar-google .icono-google {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+}
+.fondo-ingresar .conectar .conectar-facebook {
+  border: solid 1px;
+  width: 80%;
+  height: auto;
+  margin: 5px;
+  background-color: #3b5998;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+}
+.fondo-ingresar .conectar .conectar-facebook .icono-facebook {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+}
+.fondo-ingresar .ingresar {
+  width: 60%;
+  height: auto;
+  border: solid 2px;
+  background-color: #f7f6f6;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-ingresar .ingresar .tittle-registro {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-ingresar .ingresar .form-2 .email-registro {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .contraseña {
+  width: 80%;
+  background-color: white;
+  height: auto;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .confirmar-contraseña {
+  width: 80%;
+  background-color: white;
+  height: auto;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .tittle-info-personal {
+  color: black;
+  font-size: 30px;
+  margin: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+.fondo-ingresar .ingresar .form-2 .nombre-registro {
+  width: 80%;
+  background-color: white;
+  height: auto;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .apellido-registro {
+  width: 80%;
+  background-color: white;
+  height: auto;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .dni-registro {
+  width: 80%;
+  background-color: white;
+  height: auto;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .telefono-registro {
+  width: 80%;
+  background-color: white;
+  height: auto;
+  margin: 5px;
+}
+.fondo-ingresar .ingresar .form-2 .boton-registro {
+  width: 80%;
+  background-color: #f7f6f6;
+  height: auto;
+  margin: 5px;
+}
+
+.fondo-nosotros {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.fondo-nosotros .nosotros {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  border: solid 2px;
+  border-color: black;
+  background-color: #f7f6f6;
+  display: flex;
+  flex-direction: column;
+}
+.fondo-nosotros .nosotros .tittle-nosotros {
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+  margin: 5px;
+  text-align: center;
+}
+.fondo-nosotros .nosotros .texto-nosotros {
+  font-size: 18px;
+  color: black;
+  margin: 5px 10px;
+}
+
+.fondo-productos {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.fondo-productos .listado-productos {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  border: solid 2px;
+  margin: 20px;
+  background-color: #f7f6f6;
+}
+.fondo-productos .listado-productos .producto {
+  width: 204px;
+  height: auto;
+  margin: 20px;
+  border: solid 2px;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #f7f6f6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.fondo-productos .listado-productos .producto .imagen-producto {
+  width: 200px;
+  height: 50%;
+  border-radius: 8px 8px 0px 0px;
+}
+.fondo-productos .listado-productos .producto .contenido-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo-productos .listado-productos .producto .contenido-producto .titulo-producto {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+.fondo-productos .listado-productos .producto .contenido-producto .boton-comprar {
+  border: solid 2px;
+  background-color: white;
+  border-color: #840705;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+  text-decoration: none;
+  font-size: 25px;
+  width: 60%;
+  height: 30%;
+  text-align: center;
+  margin: 4px;
+}
+.fondo-productos .listado-productos .producto .contenido-producto .boton-comprar:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #840705;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fondo-productos .listado-productos .producto .contenido-producto .boton-comprar:hover {
+  color: #fff;
+}
+.fondo-productos .listado-productos .producto .contenido-producto .boton-comprar:hover:after {
+  width: 110%;
 }
 
 /*# sourceMappingURL=main.css.map */

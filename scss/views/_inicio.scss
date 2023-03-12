@@ -76,3 +76,99 @@
       }
       
 }
+.productos-destacados{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+    .titulo-productos-destacados {
+      font-size: $size-titulos;
+      color: $color-letra-principal;
+      font-weight: 600;
+      text-align: center;
+      margin: 20px 10px 0px 10px;
+      border: solid 2px;
+      border-radius: 4px;
+      width: 40%;
+      background-color: $color-primario;
+    }
+    .listado-productos{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    border: solid 2px; 
+    margin: 20px;
+    background-color: $color-secundario;
+        .producto {
+        width: 204px;
+        height: auto;
+        margin: 20px;
+        border: solid 2px;
+        border-color: black;
+        border-radius: 10px;
+        background-color: $color-secundario;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+            .imagen-producto {
+                width: 200px;
+                height: 50%;
+                border-radius: 8px 8px 0px 0px;
+                
+            }
+            .contenido-producto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                    .titulo-producto {
+                        font-size: $size-texto;
+                        color: $color-letra-secundario;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                    .boton-comprar {
+                        border: solid 2px;
+                        background-color: $color-terciario;
+                        border-color: $color-primario;
+                        border-radius: 5px;
+                        color: $color-letra-secundario;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+                        -webkit-transition: color 150ms ease-in-out;
+                        transition: color 150ms ease-in-out;
+                        text-decoration: none;
+                        font-size: $size-titulos-secundarios;
+                        width: 60%;
+                        height: 30%;
+                        text-align: center;
+                        margin: 4px;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                top: 0;
+                                left: 50%;
+                                -webkit-transform: translateX(-50%);
+                                        transform: translateX(-50%);
+                                width: 0;
+                                height: 100%;
+                                background: $color-primario;
+                                z-index: -1;
+                                -webkit-transition: width 150ms ease-in-out;
+                                transition: width 150ms ease-in-out;
+                            }
+                            &:hover {
+                                color: #fff;
+                            }
+                            &:hover:after {
+                                width: 110%;
+                            }
+                    }
+            }
+        }
+  }
+}
