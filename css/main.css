@@ -155,7 +155,6 @@ body {
 }
 
 .slider ul {
-  display: flex;
   animation: cambio 20s infinite alternate linear;
   width: 300%;
   height: 356px;
@@ -467,6 +466,7 @@ body {
   color: black;
   margin: 5px;
   font-weight: 600;
+  text-align: center;
 }
 .fondo-ingresar .conectar .conectar-google {
   border: solid 1px;
@@ -517,6 +517,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   margin: 5px;
+  text-align: center;
 }
 .fondo-ingresar .ingresar .form-2 {
   width: 100%;
@@ -589,14 +590,12 @@ body {
   background-color: white;
 }
 .fondo-nosotros .nosotros {
-  width: 50%;
+  width: 90%;
   height: auto;
-  margin: 20px;
+  margin: 10px;
   border: solid 2px;
   border-color: black;
   background-color: #f7f6f6;
-  display: flex;
-  flex-direction: column;
 }
 .fondo-nosotros .nosotros .tittle-nosotros {
   font-size: 30px;
@@ -604,6 +603,16 @@ body {
   font-weight: 600;
   margin: 5px;
   text-align: center;
+}
+.fondo-nosotros .nosotros .container-imagenes-arreglo-pc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fondo-nosotros .nosotros .container-imagenes-arreglo-pc .imagenes-arreglo-pc {
+  margin: 10px;
+  border: solid 2px;
+  border-color: black;
 }
 .fondo-nosotros .nosotros .texto-nosotros {
   font-size: 18px;

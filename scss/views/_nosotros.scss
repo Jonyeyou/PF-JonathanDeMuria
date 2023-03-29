@@ -5,20 +5,28 @@
     justify-content: center;
     background-color: $color-terciario;
     .nosotros {
-        width: 50%;
+        width: 90%;
         height: auto;
-        margin: 20px;
+        margin: 10px;
         border: solid 2px;
         border-color: black;
         background-color: $color-secundario;
-        display: flex;
-        flex-direction: column;
             .tittle-nosotros {
                 font-size: $size-titulos;
                 color: $color-letra-secundario;
                 font-weight: 600;
                 margin: 5px;
                 text-align: center;
+            }
+            .container-imagenes-arreglo-pc {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                    .imagenes-arreglo-pc {
+                        margin: 10px;
+                        border: solid 2px;
+                        border-color: black;
+                    }
             }
             .texto-nosotros {
                 font-size: $size-texto;
